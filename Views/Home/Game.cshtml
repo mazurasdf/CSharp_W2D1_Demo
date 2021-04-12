@@ -1,0 +1,17 @@
+<div>
+    <center>
+        <h1>game</h1>
+        <img src=@ViewBag.ImgSource alt="game state"/>
+        <h2>@ViewBag.Wrong</h2>
+        <h2>@ViewBag.Guesses</h2>
+
+        <form method="post" asp-controller="Home" asp-action="Guess">
+            <div class="form-group">
+                <label for="word">Type a letter:</label>
+                <input type="text" name="letter" class="form-control"/>
+            </div>
+
+            <input type="submit" class="btn btn-primary" value="Guess letter"/>
+        </form>
+    </center>
+</div>
