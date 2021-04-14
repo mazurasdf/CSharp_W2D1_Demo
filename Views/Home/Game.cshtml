@@ -2,8 +2,8 @@
     <center>
         <h1>game</h1>
         <img src=@ViewBag.ImgSource alt="game state"/>
-        <h2>@ViewBag.Wrong</h2>
-        <h2>@ViewBag.Guesses</h2>
+        <h2 class="letters">@ViewBag.Wrong</h2>
+        <h2 class="letters">@ViewBag.Guesses</h2>
 
         <form method="post" asp-controller="Home" asp-action="Guess">
             <div class="form-group">
